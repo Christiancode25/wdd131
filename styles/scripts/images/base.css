@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template: 10rem auto 10rem / auto;
+    margin: 0;
+}
+main{
+    margin: 20px;
+}
+h1 {
+    background-color: antiquewhite;
+    font-family: "Rubik Bubbles", system-ui;
+    text-align: center;
+    font-size: 50px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.navbar a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+.navbar a:hover{
+    background-color: rgb(252, 252, 252);
+}
+.navbar ul li{
+    flex: 1 1 100%;
+}
+.linkedin {
+    border-style: dashed;
+}
+.byu {
+    border-style: dashed;
+}
+.scripture {
+    border-style: dashed;
+}
+.Project {
+    border-style: dashed;
+}
+.card h2 {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 1rem;
+    margin: 0;
+    font-size: 2em;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1 / 2;
+    padding: 2rem 0;
+    margin-left: 5%;
+    max-width: 90%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    border-radius: 5px;
+    border: 2px solid ;
+}
+.picture {
+    display: flex;
+    grid-template-columns: auto;
+    margin: 1%;
+    flex: left;
+}
+.picture img {
+    height: 250px;
+}
+.card h3 {
+    text-align: center;
+}
+h3 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.phil img {
+    width: 30%;
+}
+.phil {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.picture p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.phil p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.card ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.card h2 {
+    text-align: center;
+    background-color: black;
+    color: azure;
+    padding: 1rem;
+    margin: 0;
+}
+.card ul li {
+    margin: 1rem;
+    text-align: center;
+}
+footer {
+    display: block;
+    background-color: antiquewhite;
+    padding: 2rem;
+    text-align: center;
+}
