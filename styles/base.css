@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the whole page takes up at least the full viewport height */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Use Flexbox */
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e; /* Darker blue on hover */
+    color: #f1c40f; /* Gold text on hover */
+    border-radius: 5px;
+}
+
+/* Main Styles */
+main {
+    flex: 1; /* This makes the main section grow to fill available space */
+    max-width: 1200px; /* Limited width for main content */
+    margin: 20px auto; /* Center horizontally */
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: white; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Card Images */
+.card img {
+    width: 100px; /* Image size */
+    height: auto;
+    float: right; /* Align to the right */
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+/* Resources List */
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: #3498db; /* Blue color for links */
+    transition: color 0.3s;
+}
+
+.resources ul li a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: auto; /* Ensure footer is pushed to the bottom */
+    width: 100%; /* Full width */
+    border-radius: 0; /* Remove rounding to match header width */
+    position: relative; /* Remove overlapping issues */
+    bottom: 0; /* Sticks it to the bottom of the viewport */
+}
+
+/* Additional Utility Classes */
+.center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+/* Styles for the country information section */
+.country-info {
+  grid-column: span 2; /* Make this section span both columns */
+  text-align: center; /* Center the text */
+}
+
+.flag-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-description img.flag {
+  width: 100px; /* Size of the flag */
+  height: auto;
+  margin-right: 15px; /* Space between the flag and description */
+}
+
+.flag-description p {
+  max-width: 600px; /* Limit the width of the description text */
+  margin: 0; /* Remove default margins */
+  font-family: 'Open Sans', sans-serif; /* Font for description */
+}
+/* Enhanced styles for the flag image */
+.flag-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Add some spacing above the section */
+}
+
+.flag-description img.flag {
+  width: 120px; /* Increase the size of the flag */
+  height: auto;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border: 2px solid #2c3e50; /* Add a dark border for emphasis */
+  margin-right: 20px; /* Space between flag and description */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.flag-description img.flag:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.flag-description p {
+  max-width: 600px; /* Limit the width of the description text */
+  margin: 0; /* Remove default margins */
+  font-family: 'Open Sans', sans-serif; /* Font for description */
+  text-align: left; /* Align text to the left for better readability */
+}

@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Your Full Name. Keywords: web development, dynamic web, HTML, CSS, JavaScript.">
+    <meta name="author" content="Christian Mendoza">
+    <title>WDD 131 - Dynamic Web Fundamentals - Christian Mendoza</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="script/getdates.js" defer></script>
 </head>
 <body>
-  <h1>WDD 131 - Chrstian Mendoza</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Christian Mendoza</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>My name is Christian. I am passionate about web development and love to learn new things. I live in Philippines and enjoy spending time exploring technology and improving my coding skills.</p>
+            <img src="images/unnamed.png" alt="Your Photo">
+        </section>
+
+        <section class="card">
+            <h2>Web Development Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+            </ul>
+            <img src="images/w3.jpg" alt="Web Dev Resources">
+        </section>
+        <section class="card country-info">
+          <h2>About the Philippines</h2>
+          <div class="flag-description">
+              <img src="images/Flag_of_the_Philippines.svg.webp" alt="Philippines Flag" class="flag">
+              <p>The Philippines, officially known as the Republic of the Philippines, is an archipelagic country in Southeast Asia. It consists of about 7,641 islands and is known for its rich biodiversity, vibrant culture, and beautiful beaches.</p>
+          </div>
+      </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Christian Mendoza 🌍 Isabela Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
