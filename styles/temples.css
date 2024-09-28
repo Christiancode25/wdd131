@@ -1,0 +1,155 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+  background-color: #4a148c; /* Dark purple background */
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+/* Header Heading */
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  align-items: center; /* Center align the items */
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #6a1b9a; /* Slightly lighter purple */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #8e24aa; /* Lighter purple on hover */
+}
+
+/* Main Content Styling */
+main {
+  margin-top: 20px;
+}
+
+/* Main Heading */
+main h2 {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #4a148c; /* Dark purple for heading */
+}
+
+/* Figure Styling for Image Gallery */
+figure {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+  width: 100%; /* Full width */
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #4a148c; /* Match heading color */
+}
+
+/* Footer Styling */
+/* Footer Styling */
+footer {
+  width: 100vw; /* Ensure it spans the full width of the viewport */
+  padding: 10px 20px; /* More padding */
+  background-color: #4a148c; /* Match header color */
+  color: #ffffff; /* White text */
+  border-radius: 0; /* Remove rounded corners */
+  text-align: center; /* Center the footer text */
+  position: relative; /* Relative positioning */
+  left: 0; /* Align to the left of the screen */
+  bottom: 0; /* Align to the bottom */
+}
+
+footer {
+  width: 100vw !important;
+  padding: 10px 20px !important;
+  background-color: #4a148c !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  text-align: center !important;
+  position: relative !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+/* Hamburger Button Styling */
+.hamburger-button {
+  display: block; /* Show only in mobile view */
+  cursor: pointer;
+  font-size: 24px; /* Larger size for visibility */
+  background: none; /* Remove default button styles */
+  border: none; /* Remove border */
+  color: #ffffff; /* White color to match nav */
+  padding: 10px 20px; /* Spacing around button */
+  margin: 10px 0; /* Margin around button */
+}
+
+/* Hide navigation items by default */
+nav ul {
+  display: none; /* Hide navigation items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Show navigation items when 'active' class is applied */
+nav ul.active {
+  display: flex; /* Display items as flex */
+  background-color: #4a148c; /* Match background color */
+}
+
+/* Remove the hamburger button in larger screens */
+@media screen and (min-width: 768px) {
+  .hamburger-button {
+      display: none; /* Hide hamburger button */
+  }
+
+  nav ul {
+      display: flex; /* Show navigation in row */
+      flex-direction: row; /* Arrange items horizontally */
+  }
+}
