@@ -1,0 +1,128 @@
+/* Global Variables */
+:root {
+  --primary-color: #D32F2F;  /* Red from Madagascar Flag */
+  --secondary-color: #388E3C;  /* Green from Madagascar Flag */
+  --text-color: #000;  /* Black */
+  --background-color: #fff;
+  --footer-background-color: #D32F2F;
+  --font-family: 'Arial', sans-serif;
+  --heading-font-size: 2.5rem;
+  --content-bg-opacity: rgba(0, 0, 0, 0.5);
+  --text-color-light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header Styling */
+header {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: var(--heading-font-size);
+  font-weight: bold;
+}
+
+/* Hero Image */
+#hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Data Section */
+#data {
+  background-color: var(--content-bg-opacity);
+  color: var(--text-color-light);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+#data h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.data-item {
+  margin-bottom: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+/* Weather Section */
+#weather {
+  background-color: var(--content-bg-opacity);
+  color: var(--text-color-light);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+#weather h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.weather-item {
+  margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--footer-background-color);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Responsive Layout */
+@media screen and (min-width: 768px) {
+  /* Hero Image Full Width */
+  #hero-image img {
+      max-height: 600px;
+      object-fit: cover;
+      object-position: center;
+  }
+
+  /* Align Data and Weather sections */
+  #data,
+  #weather {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  #data {
+      left: 30px;
+      max-width: 250px;
+  }
+
+  #weather {
+      right: 30px;
+      max-width: 200px;
+  }
+
+  #weather h2::after {
+      content: "☁️";
+      margin-left: 10px;
+      font-size: 1.5em;
+  }
+
+  /* Footer Full Width */
+  footer {
+      width: 100%;
+  }
+}
